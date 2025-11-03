@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+        
+        h1 {
+            color: #007bff; /* Blue color for headings */
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-lower {
+    background-color: #008CBA;
+}
+
+.btn-reverse {
+    background-color: #f44336;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Сервис преобразования текста</h1>
+        
+        <!-- <form action="{% url 'lower' %}">
+            <textarea cols="50" rows="10" name="usertext"></textarea>
+            <br><br>
+            <input type="submit" value="В нижний регистр!">
+        </form> -->
+
+
+        <!-- <h2>Convert to Lowercase</h2>
+        <form action="{% url 'lower' %}" method="GET">
+            <textarea cols="50" rows="10" name="usertext"></textarea>
+            <br><br>
+            <button type="submit" class="btn btn-lower">Convert to Lowercase</button>
+        </form>
+        
+        <h2>Convert to Uppercase</h2>
+        <form action="{% url 'upper' %}" method="GET">
+            <textarea cols="50" rows="10" name="usertext"></textarea>
+            <br><br>
+            <button type="submit" class="btn btn-upper">Convert to Uppercase</button>
+        </form>
+        
+        <h2>Reverse Text</h2>
+        <form action="{% url 'reverse' %}" method="GET">
+            <textarea cols="50" rows="10" name="usertext"></textarea>
+            <br><br>
+            <button type="submit" class="btn btn-reverse">Reverse Text</button>
+        </form>
+         -->
+
+
+
+         <form action="" method="GET">
+            <textarea cols="50" rows="10" name="usertext"></textarea>
+            <br><br>
+            <button type="submit" name="operation" value="lower" class="btn btn-lower">Convert to Lowercase</button>
+            <button type="submit" name="operation" value="upper" class="btn btn-upper">Convert to Uppercase</button>
+            <button type="submit" name="operation" value="reverse" class="btn btn-reverse">Reverse Text</button>
+        </form>
+<br>
+<hr>
+<h3>- Преобразовать текст в верхний регистр</h3>
+<h3>- Преобразовать текст в нижний регистр регистр</h3>
+<h3>- Сделать реверс текста</h3>
+<br>
+<h4>Автор идеи Оленка </h4>
+
+
+
+
+</body>
+</html>
+
+
